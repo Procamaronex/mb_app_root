@@ -1,0 +1,46 @@
+name: mb_app_root
+description: "A Flutter project as protoype ."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  rxdart: ^0.27.7
+  flutter_bloc: ^8.1.5
+  http: ^1.2.1
+  dropdown_search: ^5.0.6
+  flutter_barcode_scanner: ^2.0.0
+  assets_audio_player: ^3.1.1
+  honeywell_scanner: ^5.0.0+2
+  vibration: ^1.8.4
+  google_fonts: ^6.2.1
+  flutter_dotenv: ^5.1.0
+  flutter_speed_dial: ^7.0.0
+  flutter_spinkit: ^5.2.1
+  motion_toast: ^2.9.1
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - lib/utils/json_rutas.json
+    - assets/images/
+    - .env
+
+

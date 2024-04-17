@@ -1,0 +1,24 @@
+[    
+    {   
+        "iconoLeading": "ac_unit",
+        "iconoTrailing": "keyboard_arrow_right",
+        "opcion":"Hello World",
+        "ruta":"ruta1",
+        "children":[
+            {
+                "iconoLeading": "warehouse",
+                "iconoTrailing": "keyboard_arrow_right",
+                "opcion": "Pistoleo",
+                "ruta": "ruta1",
+                "children": [
+                ]
+            }
+        ]
+    },
+    {
+        "iconoLeading":"ac_unit",
+        "iconoTrailing":"flecha",
+        "opcion":"Clientes",
+        "ruta":"clientes"
+    }
+]
