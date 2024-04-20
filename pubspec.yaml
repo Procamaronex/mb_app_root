@@ -41,6 +41,7 @@ flutter:
   assets:
     - lib/utils/json_rutas.json
     - assets/images/
+    - assets/
     - .env
 
 

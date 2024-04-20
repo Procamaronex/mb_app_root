@@ -4,6 +4,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:mb_app_root/pages/ejemplos.dart';
 import 'package:mb_app_root/pages/obtener.dart';
 import 'package:mb_app_root/routes/routes.dart';
+import 'package:mb_app_root/view_models/productos_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:mb_app_root/utils/app_theme.dart';
 import 'package:mb_app_root/view_models/client_view_model.dart';
@@ -19,24 +20,27 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(providers: [
-      ChangeNotifierProvider(
-        create:(_)=>
-            clienteViewModel(), //QRScan //ShowMasterProvider //ProductoViewModel
-      )
-    ],
-    child: MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Procamaronex',
-      theme: AppThemeData.light,
-      /*theme: ThemeData(
+    return MultiBlocProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (_) =>
+                clienteViewModel(), //QRScan //ShowMasterProvider //ProductoViewModel
+          ),
+          ChangeNotifierProvider(create: (_) => ProductosViewModel())
+        ],
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Procamaronex',
+          theme: AppThemeData.light,
+          /*theme: ThemeData(
         //primarySwatch: Colors.blue,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
         useMaterial3: true,
       ),*/
-      routes: appRoute,
-      initialRoute: 'ruta1',//Ejemplos(), //const MyHomePage(title: 'Bases'),
-    ));
+          routes: appRoute,
+          initialRoute:
+              'ruta1', //Ejemplos(), //const MyHomePage(title: 'Bases'),
+        ));
   }
 }
 
@@ -50,7 +54,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

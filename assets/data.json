@@ -1,0 +1,14 @@
+{
+  "data": {
+    "opProduccion": "202200599",
+    "tipo": "Valor Agregado",
+    "codProducto": "PT004906",
+    "talla": "31/35",
+    "codBarra": "00130108700045317297",
+    "lote": "888-0674-C",
+    "tipoCodigo": "M",
+    "loteM": "888-0674-C"
+  },
+  "success": true,
+  "message": "Ok"
+}

@@ -20,5 +20,17 @@
         "iconoTrailing":"flecha",
         "opcion":"Clientes",
         "ruta":"clientes"
+    },
+    {
+        "iconoLeading":"ac_unit",
+        "iconoTrailing":"flecha",
+        "opcion":"Pagina provider",
+        "ruta":"gestion-estado"
+    },
+    {
+        "iconoLeading":"ac_unit",
+        "iconoTrailing":"flecha",
+        "opcion":"Honeywell Page",
+        "ruta":"honeywell"
     }
 ]
