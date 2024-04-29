@@ -24,8 +24,14 @@
     {
         "iconoLeading":"ac_unit",
         "iconoTrailing":"flecha",
-        "opcion":"Pagina provider",
+        "opcion":"Agregar - Tarea",
         "ruta":"gestion-estado"
+    },
+    {
+        "iconoLeading":"ac_unit",
+        "iconoTrailing":"flecha",
+        "opcion":"Consulta - Tarea",
+        "ruta":"gestion-estado-consulta"
     },
     {
         "iconoLeading":"ac_unit",

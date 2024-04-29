@@ -4,7 +4,11 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:mb_app_root/pages/ejemplos.dart';
 import 'package:mb_app_root/pages/obtener.dart';
 import 'package:mb_app_root/routes/routes.dart';
+import 'package:mb_app_root/view_models/actividad_gestion_estado_vm.dart';
 import 'package:mb_app_root/view_models/productos_view_model.dart';
+import 'package:mb_app_root/view_models/validar_dispositivo.dart';
+import 'package:mb_app_root/view_models/validar_dispositivo.dart';
+import 'package:mb_app_root/view_models/validar_dispositivo.dart';
 import 'package:provider/provider.dart';
 import 'package:mb_app_root/utils/app_theme.dart';
 import 'package:mb_app_root/view_models/client_view_model.dart';
@@ -26,7 +30,9 @@ class MyApp extends StatelessWidget {
             create: (_) =>
                 clienteViewModel(), //QRScan //ShowMasterProvider //ProductoViewModel
           ),
-          ChangeNotifierProvider(create: (_) => ProductosViewModel())
+          ChangeNotifierProvider(create: (_) => ProductosViewModel()),
+          ChangeNotifierProvider(create: (_) => ActividadGestionEstadoViewModel()),
+          ChangeNotifierProvider(create: (_) => ValidarDispositivo()),
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -56,6 +62,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    ValidarDispositivo validarProvider = context.read<ValidarDispositivo>();
+    validarProvider.validarDispositivo();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,

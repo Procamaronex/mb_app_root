@@ -38,7 +38,6 @@ class LoadingOverlay {
   }
 
   void hide() {
-    print("Entré en el hide");
     if (_overlayEntry != null) {
       _overlayEntry!.remove();
       _overlayEntry =
