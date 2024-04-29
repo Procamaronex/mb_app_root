@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:mb_app_root/pages/ejemplos.dart';
-import 'package:mb_app_root/pages/obtener.dart';
 import 'package:mb_app_root/routes/routes.dart';
 import 'package:mb_app_root/view_models/actividad_gestion_estado_vm.dart';
 import 'package:mb_app_root/view_models/productos_view_model.dart';
-import 'package:mb_app_root/view_models/validar_dispositivo.dart';
-import 'package:mb_app_root/view_models/validar_dispositivo.dart';
 import 'package:mb_app_root/view_models/validar_dispositivo.dart';
 import 'package:provider/provider.dart';
 import 'package:mb_app_root/utils/app_theme.dart';

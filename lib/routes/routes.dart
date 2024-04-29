@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:honeywell_scanner/honeywell_scanner.dart';
 import 'package:mb_app_root/pages/clientes.dart';
 import 'package:mb_app_root/pages/gestion_estado_consultar_page.dart';
 import 'package:mb_app_root/pages/gestion_estado_page.dart';
